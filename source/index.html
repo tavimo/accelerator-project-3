@@ -16,10 +16,18 @@
   <body class="page__body">
 
     <section class="hero" data-test="hero">
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp" srcset="img/images/hero-1-desktop@1x.webp 1x, img/images/hero-1-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="768" height="1024" type="image/webp" srcset="img/images/hero-1-tablet@1x.webp 1x, img/images/hero-1-tablet@2x.webp 2x">
+        <source type="image/webp" width="320" height="568" srcset="img/images/hero-1-mobile@1x.webp 1x, img/images/hero-1-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="1440" height="800" type="image/png" srcset="img/images/hero-1-desktop@1x.jpg 1x, img/images/hero-1-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="768" height="1024" type="image/png" srcset="img/images/hero-1-tablet.jpg 1x, img/images/hero-1-tablet@2x.jpg 2x">
+        <img src="img/images/hero-1-mobile@1x.jpg" srcset="img/images/hero-1-mobile@2x.jpg 2x" width="320" height="568" alt="Улыбающаяся девушки в очках, с папкой бумаг, на фоне университета">
+      </picture>
       <h1 class="visually-hidden">Стажировка - проект направленный на повышение квалификации молодых специлистов</h1>
       <header class="hero__header header">
-        <a href="#">
-          <img src="" alt="Логотип учебного проекта Стажировка">
+        <a class="header__img-link" href="#">
+          <img class="hero__img" src="img/images/header-logo.svg" width="52" height="52" alt="Логотип учебного проекта Стажировка">
         </a>
         <div class="header__menu">
           <button class="header__button button">Меню</button>
@@ -65,13 +73,32 @@
 
     <section class="programs" data-test="programs">
       <h2 class="programs__title">Программы</h2>
-      <div class="programs__slider"></div>
+      <div class="programs__slider">
+        <picture>
+        <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="img/images/programs-1-desktop@1x.webp 1x, img/images/programs-1-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="324" height="420" type="image/webp" srcset="img/images/programs-1-tablet@1x.webp 1x, img/images/programs-1-tablet@2x.webp 2x">
+        <source type="image/webp" width="290" height="400" srcset="img/images/programs-1-mobile@1x.webp 1x, img/images/programs-1-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="392" height="420" type="image/png" srcset="img/images/programs-1-desktop@1x.jpg 1x, img/images/programs-1-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="324" height="420" type="image/png" srcset="img/images/programs-1-tablet.jpg 1x, img/images/programs-1-tablet@2x.jpg 2x">
+        <img src="img/images/programs-1-mobile@1x.jpg" srcset="img/images/programs-1-mobile@2x.jpg 2x" width="290" height="400" alt="Две девушки, которые изучают документ">
+      </picture>
+        <h3>Стажировки</h3>
+        <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+      </div>
       <button class="programs__button button">Все программы</button>
     </section>
 
     <section class="grant" data-test="grant">
       <h2 class="grant__title">Как поехать</h2>
       <p class="grant__description">Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+       <picture>
+        <source media="(min-width: 1440px)" width="498" height="363" type="image/webp" srcset="img/images/grant-desktop@1x.webp 1x, img/images/grant-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="678" height="375" type="image/webp" srcset="img/images/grant-tablet.png@1x.webp 1x, img/images/grant-tablet.png@2x.webp 2x">
+        <source type="image/webp" width="290" height="200" srcset="img/images/grant-mobile@1x.webp 1x, img/images/grant-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="498" height="363" type="image/png" srcset="img/images/grant-desktop@1x.jpg 1x, img/images/grant-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="678" height="375" type="image/png" srcset="img/images/grant-tablet.png.jpg 1x, img/images/grant-tablet@2x.png.jpg 2x">
+        <img src="img/images/grant-mobile@1x.jpg" srcset="img/images/grant-mobile@2x.jpg 2x" width="290" height="200" alt="Указатель направлений в разные страны">
+      </picture>
 
       <div class="grant__conditions">
         <h3 class="grant__conditions-title">Чтобы получить грант на обучение, вам нужно:</h3>
@@ -96,6 +123,14 @@
 
       <div class="news__slider news-slider">
         <div class="news-slider__slide news-slider__slide--1">
+           <picture>
+              <source media="(min-width: 1440px)" width="604" height="400" type="image/webp" srcset="img/images/news-1-desktop@1x.webp 1x, img/images/news-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="324" height="350" type="image/webp" srcset="img/images/news-1-tablet@1x.webp 1x, img/images/news-1-tablet@2x.webp 2x">
+              <source type="image/webp" width="290" height="330" srcset="img/images/news-1-tablet@1x.webp 1x, img/images/news-1-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="604" height="400" type="image/png" srcset="img/images/news-1-desktop@1x.jpg 1x, img/images/news-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="324" height="350" type="image/png" srcset="img/images/news-1-tablet.jpg 1x, img/images/news-1-tablet@2x.jpg 2x">
+              <img src="img/images/news-1-tablet@1x.jpg" srcset="img/images/news-1-tablet@2x.jpg 2x" width="290" height="330" alt="Девушка и парень в библиотеке">
+            </picture>
           <span class="news-slider__date">23/03/2023</span>
           <h3 class="news-slider__title">Интервью с участницей программы стажировки</h3>
           <p class="news-slider__description">Саша рассказывает, как попала в программу и как прошла 6-месячная стажировка в ISOFound</p>
@@ -211,12 +246,25 @@
               <a class="contacts__item-info" href="mailto:oмск@supergym.ru">Info@stazh.ru</a>
             </li>
           </ul>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" width="1240" height="486" type="image/webp" srcset="img/images/map-desktop@1x.webp 1x, img/images/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="668" height="500" type="image/webp" srcset="img/images/map-tablet.svg@1x.webp 1x, img/images/map-tablet.svg@2x.webp 2x">
+          <source type="image/webp" width="290" height="240" srcset="img/images/map-mobile@1x.webp 1x, img/images/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" width="1240" height="486" type="image/png" srcset="img/images/map-desktop@1x.jpg 1x, img/images/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="668" height="500" type="image/png" srcset="img/images/map-tablet.svg.jpg 1x, img/images/map-tablet.svg@2x.jpg 2x">
+          <img src="img/images/map-mobile@1x.jpg" srcset="img/images/map-mobile@2x.jpg 2x" width="290" height="240" alt="Карта с локацией нашего адреса">
+       </picture>
+      </div>
     </section>
 
     <div data-test="form">form</div>
 
-    <div data-test="footer">footer</div>
+    <div data-test="footer">
+      <a class="footer-link" href="#">
+          <img class="footer__img" src="img/images/header-logo.svg" width="52" height="52" alt="Логотип учебного проекта Стажировка">
+        </a>
+    </div>
 
     <script type="module" src="js/main.js"></script>
   </body>
